@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab1"
+        android:title="오늘"
+        android:icon="@drawable/icon_pencil" />
+
+    <item
+        android:id="@+id/tab2"
+        android:title="전체"
+        android:icon="@drawable/icon_list"/>
+
+    <item
+        android:id="@+id/tab3"
+        android:title="카테고리"
+        android:icon="@drawable/icon_category"/>
+</menu>

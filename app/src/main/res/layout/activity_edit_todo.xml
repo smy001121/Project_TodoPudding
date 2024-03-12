@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="30dp"
+    tools:context=".EditTodoActivity"
+    android:orientation="vertical"
+    android:background="@drawable/edittodo_background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:src="@drawable/brownspoon">
+
+    </ImageView>
+
+    <EditText
+
+        android:id="@+id/doName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/dialog_background"
+        android:hint="   할일의 내용을 작성해주세요"
+        android:fontFamily="@font/font"
+        android:textSize="20dp"/>
+
+    <android.widget.Button
+        android:id="@+id/dateBnt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/doName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="20dp"
+        android:background="@drawable/dialog_background"
+        android:text="마감 기한 설정" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateBnt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/dialog_background"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/datePicker"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/dialog_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+
+        <android.widget.Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_background"
+            android:layout_marginRight="50dp"
+            android:textSize="20dp"
+            android:text="취소" />
+
+        <android.widget.Button
+            android:id="@+id/okBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/dialog_background"
+            android:textSize="20dp"
+            android:text="확인" />
+
+    </LinearLayout>
+
+</LinearLayout>

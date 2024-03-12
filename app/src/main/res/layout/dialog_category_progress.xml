@@ -1,0 +1,53 @@
+<!-- res/layout/dialog_category_progress.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top|center"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/dialog_background2"
+            android:clipToOutline="true"
+            android:src="@drawable/syrup">
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <TextView
+            android:id="@+id/categoryDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <ProgressBar
+            android:id="@+id/categoryProgressBar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/categoryProgressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/font"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
